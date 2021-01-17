@@ -1,0 +1,34 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+th {
+  height: 100px;
+}
+
+table {
+  width: 75%;
+  height: 600px;
+  margin: auto;
+  table-layout: fixed;
+  margin-top: 100px;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+input {
+  align: right;
+}
+
+#results, #results2 {
+  border: none;
+}

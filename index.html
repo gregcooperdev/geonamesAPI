@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>GeoNames Data</title>
+    <meta name="description" content="AJAX/PHP/CURL/JSON Project">
+    <meta name="author" content="Greg Cooper">
+
+    <link rel="stylesheet" type="text/css" href="libs/css/styles.css">
+  </head>
+  <body>
+
+    <h2>Geonames API Test Project</h2>
+
+    <table>
+
+        <tr>
+          <th>API Name</th>
+          <th>API Description</th>
+          <th></th>
+        </tr>
+
+        <tr>
+          <td>1. Children</td>
+          <td>
+            <p>Returns five children (admin divisions and populated places) for a given country.</p>
+
+            <select id="geonameId">
+              <option value="3175395">Italy</option>
+              <option value="1861060">Japan</option>
+              <option value="2077456">Australia</option>
+              <option value="6252001">US</option>
+              <option value="3469034">Brazil</option>
+            </select>
+
+          </td>
+          <td>
+            <button id="btnRun">Submit</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>2. Wikipedia Fulltext Search</td>
+          <td>
+            <p>Brief Overview of a City taken from Wikipedia</p>
+
+            <select id="selCity">
+                <option value="amsterdam">Amsterdam</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="singapore">Singapore</option>
+            </select>
+
+          </td>
+          <td>
+            <button id="btnRun2">Submit</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td>3. Weather Station with most recent weather observation / reverse geocoding</td>
+          <td>
+            <p>Current temperature and wind-speed from European geoposition</p>
+
+            <p>Latitude: </p>
+            <select id="selLat">
+              <option value="42">42</option>
+              <option value="50">50</option>
+              <option value="42">60</option>
+            </select>
+
+            <br>
+
+            <p>Longitude: </p>
+            <select id="selLong">
+              <option value="-2">-2</option>
+              <option value="10">10</option>
+              <option value="20">20</option>
+            </select>
+
+          </td>
+          <td>
+            <button id="btnRun3">Submit</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td><h4>RESULTS</h4></td>
+          <td colspan="2">
+            <div>
+              <p id="results"></p>
+              <br>
+              <p id="results2"></p>
+              <br>
+              <p id="results3"></p>
+              <br>
+              <p id="results4"></p>
+              <br>
+              <p id="results5"></p>
+            </div>
+        </tr>
+
+    </table>
+
+    <script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+    <script type="application/javascript" src="libs/js/script.js"></script>
+
+  </body>
+</html>
